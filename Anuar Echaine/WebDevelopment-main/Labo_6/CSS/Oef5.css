@@ -1,0 +1,19 @@
+/* CSS */
+.icon-link {
+    display: inline-block;                 /* zodat padding en background goed werken */
+    background-image: url('/Labo_6/Images/icoon.png');
+    background-repeat: no-repeat;
+    background-position: left center;      /* icoon links gecentreerd */
+    background-size: 16px 16px;            /* gewenste icoongrootte */
+    padding-left: 24px;                    /* ruimte maken voor het icoon */
+    line-height: 1.2;                      /* zorgt dat text goed uitlijnt */
+    text-decoration: none;                 /* optioneel: underline weghalen */
+    color: #1a73e8;                        /* linkkleur */
+}
+
+/* hover/focus styling voor duidelijkheid / toegankelijkheid */
+.icon-link:hover,
+.icon-link:focus {
+    text-decoration: underline;
+    outline: 2px solid transparent;        /* focus outline kan je aanpassen */
+}

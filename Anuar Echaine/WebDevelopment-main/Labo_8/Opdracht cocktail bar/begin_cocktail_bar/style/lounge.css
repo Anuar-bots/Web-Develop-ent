@@ -1,0 +1,57 @@
+#wrapper {
+    width: 95%;
+    font-size: 13px;
+    margin: auto;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+
+#content {
+    width: 70%;
+    color: rgb(68,68,68);
+}
+
+#elixirs {
+    width: 30%;
+    border: 1px solid rgb(0,126,126);
+    text-align: center;
+    float: right;
+}
+
+#elixirs h2 {
+    color: #5f3333;
+}
+
+#guarantee {
+    padding: 20px;
+    margin: 30px;
+    background-color: #a7cece;
+    border: white dotted;
+    font-style: italic;
+}
+
+h1 {
+    color: rgb(0,126,126);
+    font-size: 150%;
+}
+
+h2 {
+    color: rgb(0,126,126);
+    font-size: 130%;
+}
+
+header {
+    text-align: center;
+}
+
+#imgHeader {
+    width: 40%;
+}
+
+a:hover {
+    color: rgb(150,75,0);
+}
+
+footer {
+    clear: both;
+    text-align: center;
+}

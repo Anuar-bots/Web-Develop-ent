@@ -1,0 +1,66 @@
+main {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+div {
+    text-align: center;
+    padding: 20px;
+}
+
+.block.block1{
+    background-color: darkslategrey;
+}
+
+.block.block2{
+    background-color: darkblue;
+}
+
+.block.block3{
+    background-color: darkcyan;
+}
+
+.block.block4{
+    background-color: lightcyan;
+}
+
+/* Mobile first: > 320px - Single column, order: 1, 2, 3, 4 */
+@media (min-width: 320px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .block1 { order: 1; }
+    .block2 { order: 2; }
+    .block3 { order: 3; }
+    .block4 { order: 4; }
+}
+
+/* Tablet: > 772px - 2 columns, different order */
+@media (min-width: 772px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .block1 { order: 1; }
+    .block2 { order: 3; }
+    .block3 { order: 2; }
+    .block4 { order: 4; }
+}
+
+/* Desktop: > 992px - Block 4 is twice as large as Block 3 using fractional units */
+@media (min-width: 992px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .block1 { order: 1; }
+    .block2 { order: 2; }
+    .block3 { order: 3; }
+    .block4 { order: 4; }
+}

@@ -1,0 +1,148 @@
+/* Algemene pagina-instellingen */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* TOP GEBIED */
+.top {
+    height: 200px;
+    background-image: url("images/bgsky3.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: darkblue;
+    position: relative;
+}
+
+.top .title-big {
+    font-size: 300%;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.top .title-small {
+    font-size: 240%;
+    font-weight: bold;
+    margin: 0;
+}
+
+.top img {
+    position: absolute;
+    right: 250px;
+    bottom: 60px;
+    z-index: 10; /* vóór de tekst */
+}
+
+/* PAGINA LAYOUT */
+.page {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row-reverse;
+}
+
+/* NEWS GEBIED */
+.news {
+    width: 25%;
+    background-color: #dddddd;
+    border: 1px solid #999999;
+}
+
+.news h3 {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 120%;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.news p {
+    color: #666666;
+    font-size: 100%;
+    padding: 0 10px 10px 10px;
+}
+
+/* MAIN GEBIED */
+.main {
+    width: 75%;
+    margin-left: 10px;
+}
+
+/* INTRODUCTION (met logo) */
+.introduction {
+    background-color: white;
+    color: black;
+    text-align: justify;
+    padding: 20px 30px 20px 0;
+}
+
+.introduction img {
+    float: left;
+    margin: 20px;
+}
+
+.introduction span {
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* GALLERY */
+.gallery {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #999999;
+    padding: 20px;
+}
+
+.foto {
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px dotted #999999;
+}
+
+.foto img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* BOTTOM GEBIED */
+.bottom {
+    background-color: #666666;
+    color: white;
+    line-height: 2em;
+    display: flex;
+    padding-left: 120px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 80px;
+}
+
+.bottom a {
+    color: white;
+    text-decoration: none;
+}
+
+.bottom a:hover {
+    color: red;
+}
+
+/* COPYRIGHT */
+.copyright {
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 10px 0;
+}
